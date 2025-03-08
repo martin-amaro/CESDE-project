@@ -511,3 +511,137 @@ a, button {
     display: flex;
     margin: 2rem 0;
 }
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 0 .8rem;
+
+    @media (min-width: 1024px) {
+        padding: 2rem;
+        
+        width: 90%;
+        flex-direction: row;
+    }
+}
+
+.faq-media {
+    width: 100%;
+    overflow: hidden;
+
+    @media (min-width: 1024px) {
+        width: 40%;
+    }
+
+    img {
+        border-radius: 8px;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+
+        @media (min-width: 1024px) {
+            object-fit: none;
+            height: auto;
+            width: auto;
+        }
+
+    }
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    /* padding: 1rem; */
+    width: 100%;
+
+    @media (min-width: 768px) {
+        padding: 1rem 5rem;
+    }
+
+    @media (min-width: 1024px) {
+        width: 60%;
+        max-width: 1600px;
+    }
+}
+
+
+.faq-item {
+    width: 100%;
+    user-select: none;
+
+
+    .faq-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        font-size: 18px;
+        /* background-color: #303030; */
+        background-color: #FFF;
+        color: #303030;
+
+        border: 1px solid #303030;
+        border: 0px;
+        cursor: pointer;
+        font-family: var(--font-ps);
+        text-align: left;
+    
+        @media (min-width: 1024px) {
+            font-size: 20px;
+        }
+
+        .fal{
+            transition: .3s;
+            transform: rotate(0deg);
+            fill: #303030;
+        }
+
+        &.active {
+            /* color: #5c53db; */
+        }
+
+        &.active .fal {
+            transform: rotate(135deg);
+        }
+    }
+}
+
+
+
+.faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: .25s grid-template-rows cubic-bezier(0.4, 0, 0.2, 1);
+    /* background-color: #303030; */
+    border-top: 1px solid black;
+    border-top: 1px solid #878787;
+    font-size: 1.2rem;
+    
+    @media (min-width: 768px) {
+        font-size: 1rem;
+
+    }
+
+    padding: 0rem 1.5rem;
+
+    .faq-content__ov {
+        overflow: hidden;
+    }
+
+    &.active {
+        grid-template-rows: 1fr;
+        /* border-top: 2px solid #6559ff; */
+    }
+
+    p {
+        color: #878787;
+        margin: 1rem;
+    }
+}
+
