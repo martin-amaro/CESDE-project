@@ -79,8 +79,8 @@
     <main class="content">
         <div class="hero-section">
             <div class="image-container">
-                <img class="parallax" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1un6n2t3qDgOFvH9xibK1f/0981ca88e6c56c756b3da76e852bd872/GettyImages-1367106352__1_.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000" alt="">
-                <!-- <video src="/assets/videos/intro2.mp4" autoplay muted loop ></video> -->
+                <!-- <img class="parallax" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1un6n2t3qDgOFvH9xibK1f/0981ca88e6c56c756b3da76e852bd872/GettyImages-1367106352__1_.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000" alt=""> -->
+                <video class="parallax" src="assets/videos/intro2.mp4" poster="assets/images/hero.png" autoplay muted loop ></video>
                 
             </div>
             <div class="info_container">
@@ -119,12 +119,20 @@
                 <button class="btn-main">Explora la plataforma</button>
             </div>
             <div class="feature-section__img">
-                <img src="/assets/images/app-dashboard.webp" alt="">
+                <img src="assets/images/app-dashboard.webp" alt="">
             </div>
         </section>
 
         <section class="feature-w-section">
-            <h1>Pao pao pao</h1>
+            <div class="feature-section__info">
+                <h2>¿Por qué Square?</h2>
+                <p>Digitalice cada elemento de su operación y encuentre áreas de mejora en cada paso del camino.</p>
+            </div>
+
+        </section>
+
+        <section>
+            
         </section>
 
         <section class="footer">
@@ -196,44 +204,6 @@
         </section>
     </main>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-            document.documentElement.style.setProperty("--scrollbar-width", `${scrollbarWidth}px`);
-        });
-
-
-        const menuToggle = document.getElementById('menuToggle');
-        const menuMobile = document.getElementById('menuMobile');
-
-        menuToggle.addEventListener('click', (event) => {
-            let isActive = menuMobile.classList.contains('active');
-
-            // if (isActive) {
-            //     menuToggle.classList.remove('active');
-            //     menuMobile.classList.remove('active');
-            // } else {
-            //     menuToggle.classList.add('active');
-            //     menuMobile.classList.add('active');
-            // }
-
-            // Sincronizar ambos elementos
-            menuToggle.classList.toggle('active', !isActive);
-            menuMobile.classList.toggle('active', !isActive);
-
-        });
-
-        const root = document.documentElement;
-        const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-        const marqueeContent = document.querySelector("ul.partner-gallery__content");
-
-        root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-        for(let i=0; i<marqueeElementsDisplayed; i++) {
-        marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-        }
-
-    </script>
     <script src="scripts/home.js"></script>
 </body>
 </html>

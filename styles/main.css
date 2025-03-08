@@ -415,8 +415,8 @@ a, button {
 
         &::before {
             content: "";
-            background: linear-gradient(-90deg, #ffffff2f 0, #ffffff 70%);
-            background: rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.7);
+            /* background: linear-gradient(-90deg, #ffffff2f 0, #ffffff 70%); */
             position: absolute;
             top: 0;
             left: 0;
@@ -505,4 +505,9 @@ a, button {
 
 .info_container__desc {
     font-size: 1.12rem
+}
+
+.feature-w-section {
+    display: flex;
+    margin: 2rem 0;
 }

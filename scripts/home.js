@@ -1,3 +1,31 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.documentElement.style.setProperty("--scrollbar-width", `${scrollbarWidth}px`);
+});
+
+// Menu mobile
+const menuToggle = document.getElementById('menuToggle');
+const menuMobile = document.getElementById('menuMobile');
+
+menuToggle.addEventListener('click', (event) => {
+    let isActive = menuMobile.classList.contains('active');
+
+    // Sincronizar ambos elementos
+    menuToggle.classList.toggle('active', !isActive);
+    menuMobile.classList.toggle('active', !isActive);
+
+});
+
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.partner-gallery__content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+
 const handleScroll = () => {
     const scrollTop = document.documentElement.scrollTop || window.scrollY;
     const parallaxImage = document.querySelector('.parallax2');
