@@ -1,89 +1,76 @@
-# Vite + Tailwind CSS Boilerplate
+# **Stockering**
 
-This project is a boilerplate that uses Vite and Tailwind CSS to create fast and modern web applications. It provides an optimized initial configuration for an efficient development workflow.
+## **Descripción**
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+¡Bienvenido al repositorio de **Stockering**! Este proyecto está destinado a ser una aplicación de gestión de inventarios diseñada para adaptarse a las necesidades de diversos tipos de negocios. Ya sea que estés en una tienda, una empresa de alto flujo, una obra de construcción, o cualquier otro tipo de actividad que requiera una administración exacta de productos o materiales, **Stockering** te ofrece una solución integral.
 
-## Key Features
+La aplicación permite organizar los inventarios de manera eficiente, gestionar los gastos, y controlar la entrada de cada producto o material, todo de forma sencilla y clara. Con el objetivo de facilitar la vida de los administradores y dueños de negocios, **Stockering** hace que la gestión de inventarios sea más rápida y precisa.
 
-- **Vite:** An extremely fast and lightweight frontend build tool that greatly improves the development experience.
-- **Tailwind CSS:** A utility-first CSS framework that allows you to quickly build custom user interfaces.
-- **Simplified Configuration:** Predefined configuration for a quick and easy start.
-- **Organized Project Structure:** A clear and maintainable folder structure.
-- **Fast Development:** Instant browser reload during development.
-- **Production Optimization:** Optimized builds for deployment.
+Este proyecto está en constante desarrollo, y por el momento, se encuentra en las primeras etapas, con una estructura básica de HTML, CSS y JAVA.
 
-## Prerequisites
-Make sure you have Node.js and npm (Node Package Manager) installed on your system.
+## **Características**
 
-**Node.js:** (version 20 or higher recommended)
-- Download from: nodejs.org
+- **Gestión de inventarios personalizada**: Dependiendo de las necesidades específicas de cada cliente, la app permite acceder a diferentes tipos de inventarios.
+- **Gestión de gastos**: Lleva el control detallado de los gastos y la entrada de productos o materiales.
+- **Interfaz amigable**: Gracias a las tecnologías utilizadas, la interfaz será intuitiva y fácil de usar.
+- **Orientada a múltiples sectores**: Desde tiendas y empresas con alto volumen de productos hasta obras de construcción o cualquier otro sector que requiera un conteo exacto de inventarios.
 
-## Quick Start
-Follow these steps to start working on the project:
-**1. Clone the Repository:**
-```sh
-git clone <REPOSITORY_URL>
-Replace <REPOSITORY_URL> with the actual URL of your repository.
-```
-**2. Navigate to the Project Directory:**
-```sh
-cd <DIRECTORY_NAME>
-Replace <DIRECTORY_NAME> with the name of the directory that was created when cloning the repository.
-```
-**3. Install Dependencies:**
-```sh
-npm install
-```
-This command will install all the necessary dependencies defined in `package.json`.
+## **Tecnologías utilizadas**
 
-## Development
-To start the development server, run the following command:
-```sh
-npm run dev
-```
-This will start the server at `http://localhost:5173` (or the port configured in `vite.config.js`). The browser will open automatically (or you can open it manually) to display your application. Changes you make to the `src` files will be instantly reflected in the browser thanks to Vite's hot reload.
+Este proyecto está siendo desarrollado con las siguientes tecnologías:
 
-## Production Build
-To build the project for production, use the following command:
-```sh
-npm run build
-```
-This command will create a `dist` folder in the project root. This folder will contain the optimized files for deployment.
+- **JavaScript**: Para la lógica del lado del cliente.
+- **Node.js**: Para el desarrollo del backend y la integración con el servidor.
+- **Vite**: Para un desarrollo rápido y eficiente con un entorno de construcción optimizado.
+- **Java**: En las primeras fases del proyecto, utilizado para manejar algunas funcionalidades clave.
 
-## Preview Production Version
-To preview the production version locally, run:
-```sh
-npm run preview
-This command will start a local server that serves the files in the dist folder.
-```
+## **Instalación**
 
-## Essential Commands
-- `npm run dev`: Starts the development server.
-- `npm run build`: Builds the project for production.
-- `npm run preview`: Locally previews the production version.
+Para instalar y ejecutar el proyecto en tu máquina local, sigue estos pasos:
 
-## Project Structure
-```Markdown
+1. **Clona el repositorio**:
+    ```bash
+    git clone https://github.com/usuario/Stockering.git
+    ```
 
-tailwind-boilerplate-master/
-├── public/                 # Public static files
-│   ├── favicon.ico         # Site icon
-├── src/                    # Application source files
-│   ├── assets/
-│   │   └── css/
-│   │       └── style.css   # Main CSS file
-│   ├── js/                 
-│   │   ├── shared/         
-│   │   └── index.js        # Main JS file
-│   └── index.html          # Application entry point
-├── .gitignore              # Git ignore file
-├── package.json            # Project dependencies and scripts
-├── postcss.config.js       # PostCSS configuration
-├── tailwind.config.js      # Tailwind CSS configuration
-├── vite.config.js          # Vite configuration
-└── README.md               # Project documentation
-```
+2. **Accede a la carpeta del proyecto**:
+    ```bash
+    cd Stockering
+    ```
 
-## License
-This project is licensed under the `BSD 3-Clause` License. See the `LICENSE` file for more details.
+3. **Instala las dependencias**:
+    ```bash
+    npm install
+    ```
+
+4. **Inicia el proyecto**:
+    ```bash
+    npm start
+    ```
+
+Por el momento, este es el proceso básico para ejecutar el proyecto en tu entorno local.
+
+## **Uso**
+
+El proyecto está en sus primeras fases y actualmente solo cuenta con una estructura básica de HTML, CSS y JAVA. En las futuras actualizaciones, podrás acceder a funcionalidades completas para la gestión de inventarios, gastos y productos.
+
+## **Autores y Créditos**
+
+Este proyecto ha sido desarrollado por:
+
+- **Martin Amaro**
+- **Diego Cárdenas**
+- **Daniel Muñoz**
+
+El proyecto sigue en desarrollo, por lo que cualquier colaboración o sugerencia es más que bienvenida.
+
+
+## **Licencia**
+
+Este proyecto está bajo la licencia **MIT**. Puedes consultar el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+### **Agradecimientos**
+
+Agradecemos el apoyo de todos los involucrados y quienes han mostrado interés en el proyecto. Sin el esfuerzo conjunto, este proyecto no sería posible.
