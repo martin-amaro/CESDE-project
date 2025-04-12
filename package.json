@@ -1,22 +1,28 @@
 {
-  "name": "boilerplate-vite-tailwindcss",
+  "name": "stockering",
   "version": "1.0.0",
-  "description": "Boilerplate Vite + TailwindCSS",
+  "description": "Organizacion De Inventarios",
   "keywords": [
-    "vite",
-    "tailwindcss"
+  "stockering",
+  "HTML",
+  "CSS",
+  "Java",
+  "inventario",
+  "gestión de productos",
+  "control de materiales"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zexarcore/vite-tailwindcss"
+    "url": "https://github.com/martin-amaro/CESDE-project.git/vite-tailwindcss"
   },
-  "author": {
-    "name": "zexarcore<Julio C. Cortes C.>",
-    "email": "zexarcore@protonmail.com",
-    "url": "https://github.com/zexarcore"
+  "author": { 
+
+    "name": "dnlm7 Daniel Muñoz G.", 
+    "email": "dafemu1215@hotmail.com", 
+    "url": "https://github.com/martin-amaro/CESDE-project.git"
   },
-  "license": "BSD 3-Clause",
-  "homepage": "https://github.com/zexarcore/vite-tailwindcss/blob/master/README.md",
+  "license": "Personalizada",
+  "homepage": "https://github.com/martin-amaro/CESDE-project.git/vite-tailwindcss/blob/master/README.md",
   "type": "module",
   "engines": {
     "node": ">=20",
